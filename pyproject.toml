@@ -12,7 +12,7 @@ authors = [{name = "mpsops"}]
 requires-python = ">=3.10"
 dependencies = [
     "torch>=2.0.0",
-    "mps-flash-attn>=0.1.7",
+    "mps-flash-attn>=0.1.8",
     "mps-bitsandbytes>=0.1.1",
     "mps-deform-conv>=0.1.1",
     "mps-correlation>=0.1.1",
