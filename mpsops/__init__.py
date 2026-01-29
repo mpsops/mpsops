@@ -10,9 +10,10 @@ Packages included:
 - mps-deform-conv: Deformable convolution for detection
 - mps-correlation: Correlation for optical flow
 - mps-carafe: Content-aware upsampling
+- mps-conv3d: 3D convolution for video models
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # Re-export from subpackages for convenience
 try:
@@ -47,6 +48,13 @@ except ImportError:
     CARAFE = None
     CARAFEPack = None
 
+try:
+    from mps_conv3d import conv3d, Conv3d, patch_conv3d
+except ImportError:
+    conv3d = None
+    Conv3d = None
+    patch_conv3d = None
+
 
 def available_packages():
     """Return a dict of available packages and their status."""
@@ -56,6 +64,7 @@ def available_packages():
         "mps-deform-conv": deform_conv2d is not None,
         "mps-correlation": correlation is not None,
         "mps-carafe": carafe is not None,
+        "mps-conv3d": conv3d is not None,
     }
     return packages
 

@@ -18,6 +18,7 @@ pip install mps-bitsandbytes  # Quantized ops
 pip install mps-deform-conv   # Deformable convolution
 pip install mps-correlation   # Optical flow correlation
 pip install mps-carafe        # Content-aware upsampling
+pip install mps-conv3d        # 3D convolution for video
 ```
 
 ## Packages
@@ -29,6 +30,7 @@ pip install mps-carafe        # Content-aware upsampling
 | [mps-deform-conv](https://github.com/mpsops/mps-deform-conv) | Deformable convolution | Object detection (DETR, DCN) |
 | [mps-correlation](https://github.com/mpsops/mps-correlation) | Correlation layer | Optical flow (RAFT, PWC-Net) |
 | [mps-carafe](https://github.com/mpsops/mps-carafe) | CARAFE upsampling | Segmentation (Mask R-CNN) |
+| [mps-conv3d](https://github.com/mpsops/mps-conv3d) | 3D Convolution | Video models (I3D, SlowFast, MMAudio) |
 
 ## Quick Start
 
@@ -39,7 +41,7 @@ import mpsops
 mpsops.print_status()
 
 # Use the ops directly
-from mpsops import flash_attn_func, deform_conv2d, correlation, carafe
+from mpsops import flash_attn_func, deform_conv2d, correlation, carafe, conv3d, patch_conv3d
 ```
 
 ## Compatibility

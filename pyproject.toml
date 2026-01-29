@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mpsops"
-version = "0.1.0"
+version = "0.1.1"
 description = "CUDA-only PyTorch operations for Apple Silicon - metapackage"
 readme = "README.md"
 license = "MIT"
@@ -12,11 +12,12 @@ authors = [{name = "mpsops"}]
 requires-python = ">=3.10"
 dependencies = [
     "torch>=2.0.0",
-    "mps-flash-attn>=0.1.0",
-    "mps-bitsandbytes>=0.1.0",
-    "mps-deform-conv>=0.1.0",
+    "mps-flash-attn>=0.1.3",
+    "mps-bitsandbytes>=0.1.1",
+    "mps-deform-conv>=0.1.1",
     "mps-correlation>=0.1.0",
-    "mps-carafe>=0.1.0",
+    "mps-carafe>=0.1.1",
+    "mps-conv3d>=0.1.0",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -37,8 +38,9 @@ Repository = "https://github.com/mpsops/mpsops"
 Issues = "https://github.com/mpsops/mpsops/issues"
 
 [project.optional-dependencies]
-flash-attn = ["mps-flash-attn>=0.1.0"]
-bitsandbytes = ["mps-bitsandbytes>=0.1.0"]
-deform-conv = ["mps-deform-conv>=0.1.0"]
+flash-attn = ["mps-flash-attn>=0.1.3"]
+bitsandbytes = ["mps-bitsandbytes>=0.1.1"]
+deform-conv = ["mps-deform-conv>=0.1.1"]
 correlation = ["mps-correlation>=0.1.0"]
-carafe = ["mps-carafe>=0.1.0"]
+carafe = ["mps-carafe>=0.1.1"]
+conv3d = ["mps-conv3d>=0.1.0"]
