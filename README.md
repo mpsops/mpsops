@@ -26,7 +26,7 @@ pip install mps-conv3d        # 3D convolution for video
 | Package | Description | Use Case |
 |---------|-------------|----------|
 | [mps-flash-attn](https://github.com/mpsops/mps-flash-attn) | Flash Attention | Transformers, LLMs |
-| [mps-bitsandbytes](https://github.com/mpsops/mps-bitsandbytes) | 8-bit/4-bit quantization | LLM inference, QLoRA |
+| [mps-bitsandbytes](https://github.com/mpsops/mps-bitsandbytes) | NF4/FP4/FP8/INT8 quantization | LLM inference, QLoRA |
 | [mps-deform-conv](https://github.com/mpsops/mps-deform-conv) | Deformable convolution | Object detection (DETR, DCN) |
 | [mps-correlation](https://github.com/mpsops/mps-correlation) | Correlation layer | Optical flow (RAFT, PWC-Net) |
 | [mps-carafe](https://github.com/mpsops/mps-carafe) | CARAFE upsampling | Segmentation (Mask R-CNN) |
