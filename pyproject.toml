@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mpsops"
-version = "0.1.4"
+version = "0.1.5"
 description = "CUDA-only PyTorch operations for Apple Silicon - metapackage"
 readme = "README.md"
 license = "MIT"
@@ -12,7 +12,7 @@ authors = [{name = "mpsops"}]
 requires-python = ">=3.10"
 dependencies = [
     "torch>=2.0.0",
-    "mps-flash-attn>=0.1.8",
+    "mps-flash-attn>=0.1.14",
     "mps-bitsandbytes>=0.1.1",
     "mps-deform-conv>=0.1.1",
     "mps-correlation>=0.1.1",
@@ -38,7 +38,7 @@ Repository = "https://github.com/mpsops/mpsops"
 Issues = "https://github.com/mpsops/mpsops/issues"
 
 [project.optional-dependencies]
-flash-attn = ["mps-flash-attn>=0.1.7"]
+flash-attn = ["mps-flash-attn>=0.1.14"]
 bitsandbytes = ["mps-bitsandbytes>=0.1.1"]
 deform-conv = ["mps-deform-conv>=0.1.1"]
 correlation = ["mps-correlation>=0.1.1"]
