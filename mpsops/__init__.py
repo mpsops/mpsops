@@ -13,7 +13,7 @@ Packages included:
 - mps-conv3d: 3D convolution for video models
 """
 
-__version__ = "0.1.1"
+__version__ = "0.1.15"
 
 # Re-export from subpackages for convenience
 try:
